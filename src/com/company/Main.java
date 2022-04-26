@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         File ip = new File("","ip.txt");
         if (!ip.exists()){
-            boolean ipIsCreated = ip.createNewFile();
+            ip.createNewFile();
         }
 
         FileWriter writer = new FileWriter("ip.txt", true);
